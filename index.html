@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playstation 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+
+            <img src="/img/logo.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Download</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <img src="/img/menu.png" class="menuicon" onclick="togglemenu()">
+        </div>
+        <div class="row" id="rowid">
+            <div class="col1">
+                <span></span>
+                <h2>Playstation 4<br>Dualstock </h2>
+                <h3>The best gaming console.</h3>
+                <p>(In stock)</p>
+                <h4>0 Tk</h4>
+                <div>
+                    <a href="#" class="btn btn2">Buy now</a>
+                </div>
+            </div>
+            <div class="col2">
+                <img src="/img/controller.png" class="controller">
+                <span class="color-box"></span>
+                <div class="addbutton">
+                    <img src="/img/add.png" class="cartlogo">
+                    <p><small>add to cart</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="social-icons">
+            <div class="social-icon">
+
+                <a href="https://www.facebook.com/" target="_blank"><img src="/img/fb.png"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="/img/ig.png" ></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="/img/tw.png" ></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Made with &#9825; By Rafi Senpai</p>
+    </footer>
+<script>
+    var menList = document.getElementById(menuList);
+
+    menuList.style.maxHeight = "0px";
+
+    function togglemenu(){
+        if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "180px"
+            }
+        else{
+            menuList.style.maxHeight = "0px"
+        }
+    }
+</script>
+</body>
+
+
+</html>
